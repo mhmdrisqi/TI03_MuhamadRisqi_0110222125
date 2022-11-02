@@ -1,0 +1,65 @@
+.container{
+    width: 900px;
+    border-radius: 10px;
+    background-color:navajowhite;
+    margin: 50px auto;
+}
+#header{
+    background-color: burlywood;
+    height: 125px;  
+    border-radius: 10px;
+}
+h1{
+   color: blue;
+   text-align: center;
+   margin-top: 15px;
+}
+blockquote{
+    background-color: yellow;
+}
+.b{
+    color: blue;
+    font-weight: bold;
+    font-size: 70px;
+}
+blockquote{
+    text-align: center;
+
+}
+#Navigasi, a{
+    display: flex;
+    justify-content: center ;
+    text-decoration: none;  
+
+}
+li{
+    margin-right: 9px ;
+    list-style: none;  
+}
+.gambar, img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+h3{
+    margin-left: 35px;
+}
+.is p{
+    text-align: center;
+}
+.koleksi{
+    display: flex;
+    justify-content: space-between;
+}
+.bawah ol{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+
+
