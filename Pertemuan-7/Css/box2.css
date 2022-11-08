@@ -1,0 +1,42 @@
+.box1{
+    height: 150px;
+    width: 100%;
+    background-color:#aedd94;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.container .box:nth-child(1){
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 2px solid black
+    ;
+    margin-right: 55px;
+}
+.container .box:nth-child(2){
+    width: 85%;
+    height: 150px;
+    background-color: firebrick;
+    border: 2px solid black
+    ;
+}
+.boxbg-blue{
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black
+    ;
+    margin-right: 55px;
+}
+.box3{
+    width: 85%;
+    height: 150px;
+    background-color:aqua;
+    border: 2px solid black
+    ;
+}
+
