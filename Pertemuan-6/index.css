@@ -1,0 +1,21 @@
+
+.satu   {
+    width: 200px;
+    height: 250px;
+    background-color: yellow;
+    overflow: auto;
+    margin: auto;
+    padding-left: 50px;
+    padding-top: 40px;
+    border: 5px dotted black;
+}
+.dua{
+    margin: 10px auto;
+    overflow: auto;
+    background-color: blue;
+    width: 40%;
+    height: 40%;
+    padding-left: 50px;
+
+    
+}
