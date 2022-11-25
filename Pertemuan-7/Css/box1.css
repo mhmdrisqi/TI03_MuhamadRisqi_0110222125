@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     justify-content: space-around;
     display: flex;
@@ -27,4 +28,35 @@ body{
     height: 500px;
     background-color:#4dd7fa ;
     border: 2px solid black;
+=======
+body{
+    justify-content: space-around;
+    display: flex;
+
+    
+}
+.box1{
+    width: 200px;
+    height: 500px;
+    background-color: #f4eb49;
+    border: 2px solid black;
+}
+.box2{
+    width: 200px;
+    height: 500px;
+    background-color: #ff6624;
+    border: 2px solid black;
+}
+.box3{
+    width: 200px;
+    height: 500px;
+    background-color: #aedd94;
+    border: 2px solid black;
+}
+.box4{
+    width: 200px;
+    height: 500px;
+    background-color:#4dd7fa ;
+    border: 2px solid black;
+>>>>>>> 1e19065cea770433052f713b2a59b508225afe16
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div{
     justify-content: center;
     display: flex;
@@ -49,4 +50,57 @@ div{
     border: 2px solid black;
     justify-content: center;
     display: flex;
+=======
+div{
+    justify-content: center;
+    display: flex;
+}
+.satu{
+    height: 100px;
+    width: 25%;
+    background-color: yellow;
+    border: 2px solid black;
+    margin: 5px;
+}
+.dua{
+    height: 100px;
+    width: 75%;
+    background-color: rgb(236, 77, 9);
+    border: 2px solid black;
+    margin: 5px;
+}
+div{
+    display: flex;
+
+}
+.tiga{
+    height: 400px;
+    width: 25%;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    margin: 5px;
+}
+.empat{
+    height: 400px;
+    width: 50%;
+    background-color: grey;
+    border: 2px solid black;
+    margin: 5px;
+    
+}
+.lima{
+    height: 400px;
+    width: 25%;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin: 5px;
+}
+.enam{
+    background-color: blue;
+    height: 95px;
+    margin: 5px;
+    border: 2px solid black;
+    justify-content: center;
+    display: flex;
+>>>>>>> 1e19065cea770433052f713b2a59b508225afe16
 }
