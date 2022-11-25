@@ -1,0 +1,19 @@
+/*Reset margin dan padding di tag body*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 10vw;
+    border: 1px solid grey;
+    flex-grow: 1;
+}
+
+.container{
+    display: flex;
+}
+
+p{
+    font-size: 1rem;
+}

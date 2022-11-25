@@ -1,0 +1,26 @@
+
+/*Reset margin dan padding di tag body*/
+body{
+    margin: 0;
+    padding: o;
+}
+img{
+    height: 4rem;
+}
+/*felx container*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0.0.5rem;
+}

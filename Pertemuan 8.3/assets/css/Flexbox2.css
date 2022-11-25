@@ -1,0 +1,40 @@
+/*Reset margin dan padding*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, article, nav, aside, footer{
+    padding: 1rem;
+}
+/*flex container*/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer{
+    height: 20vh;
+    background-color: khaki;
+}
+
+/*flex container*/
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+article{
+    flex-grow: 1;
+}
+
+
+aside{
+    background-color: pink;
+    flex: 0 0 20vw;
+}
+
+nav{
+    background-color: #03dac5;
+    flex: 0 0 20vw;
+}
