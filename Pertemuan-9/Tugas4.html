@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung jumlah dua bilangan</title>
+    <script>
+        function getjumlah (){
+            let hasil;
+            let input1;
+            let input2;
+    
+            input1 = parseInt(document .
+            getElementById ("txtinput1"). 
+            value);
+    
+            input2 = parseInt(document . 
+            getElementById("txtinput2") .
+            value);
+    
+            hasil = input1 + input2;
+    
+            document.getElementById("txthasil") .value = hasil;
+        }
+     </script>
+</head>
+<body>
+    <h1>Menghitung jumlah dua bilangan</h1>
+
+ <div>
+    <div>
+        <label for=""></label>
+        <input type="text" id="txtinput1" onchange="getjumlah()">
+        <p>+</p>
+    </div>
+    <div>
+        <label for=""></label>
+        <input type="text" id="txtinput2" onchange="getjumlah()">
+        <p>=</p>
+    </div>
+    <div>
+        <label for=""></label>
+        <input type="number" id="txthasil" >
+    </div>
+ </div>
+
+
+</body>
+</html>
