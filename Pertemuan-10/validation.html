@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <a style="text-decoration: none;" href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home">
+        </a><br>
+    </div>
+    <div class="hearder">
+        <form action="#">
+            <div class="form">
+                <h1>Validation</h1>
+            </div>
+            <div class="form-validasi">
+                <label for="name">Nama pelanggan:</label>
+                <p id="nama"></p>
+                <input type="text" id="name" placeholder="Masukan nama">
+            </div>
+            <div class="form-validasi">
+                <label for="email">Email:</label>
+                <p id="imel"></p>
+                <input type="text" id="emaill" placeholder="Masukan emaill" >
+            </div>
+            <div class="form-validasi">
+                <label for="jam">jam keberangkatan:</label>
+                <p id="jamm"></p>
+                <input type="time" id="jam">
+            </div>
+            <div class="form-validasi">
+                <label for="tujuan">Tujuan keberangkatan:</label>
+                <p id="tjn"></p>
+                <input type="text" id="tujuan" placeholder="Masukan tujuan">
+            </div>
+            <div class="form-validasi">
+                <label for="tiket">Jumlah tiket:</label>
+                <p id="tkt"></p>
+                <input type="number" id="tiket" placeholder="Masukan jumlah tiket">
+            </div>
+            <div class="form-validasi">
+                <input type="submit" onclick="validasi()"  value="Pesan Sekarang" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function dekor1(){
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "gray";
+        }
+        function dekor2(){
+            dekor_2 = document.getElementById("home");
+            dekor_1.style.color = "darkblue";
+        }
+        function validasi(){
+            let isian_nama = document.getElementById("name").value;
+            let p = document.getElementById("nama")
+
+            let isian_email = document.getElementById("emaill").value;
+            let p1 = document.getElementById("imel");
+
+            let isian_jam = document.getElementById("jam").value;
+            let p2 = document.getElementById("jamn");
+
+            let isian_tujuan = document.getElementById("tujuan").value;
+            let p3 = document.getElementById("tjn");
+
+            let isian_tiket = document.getElementById("tiket").value;
+            let p4 = document.getElementById("tkt");
+
+            if(isian_nama == ""){
+                p.innerHTML = `<p>` + "Nama tidak valid" + `</p>`;
+
+            }else if(isian_nama.length > 30){
+                p.innerHTML = `<p>` + "Maksimum 30 karakter." + `</p>`;
+            }else{
+                p.innerHTML = `<p></p>`;
+            }
+            if(isian_email == ""){
+                p1.innerHTML = `<p>` + "Email wajib di isi." + `</p>`;
+            }else if (isian_email.length <= 9 || isian_emaill == "@gmail.com"){
+                p1.innerHTML = `<p>` +  "Email wajib diisi" +`</p>`;
+            }else{
+                p1.innerHTML = `<p></p>`;
+            }
+            if(isian_tujuan == ""){
+                p3.innerHTML = `<p>` + "Tujuan wajib di isi." + `</p>`;
+            }else if(isian_tujuan ==""){
+                p3.innerHTML = `<p>`+"tujuan keberangkatan wajib diisi"+`</p>`;
+            }
+            else{
+                p1.innerHTML = `<p></p>`;
+            }
+            if(isian_tiket == "" || isian_tiket <= 0){
+                p4.innerHTML = `<p>` + "min.1, max.10." + `</p>`
+            }else if(isian_tiket > 10){
+                p4.innerHTML = `<p>` + "Masukan 10 tiket." `</p>`;
+            }else{
+                p4.innerHTML = `<p></p>`
+            }
+        }
+    </script>
+</body>
+</html>

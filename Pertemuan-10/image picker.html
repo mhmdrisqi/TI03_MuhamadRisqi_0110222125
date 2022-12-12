@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>- - - P i l i h   G a m b a r - - -</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br />
+    <img alt="gambar" id="image" />
+
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                   
+                );
+                alert("ini gambar gorila")
+            }else if (drop_img == "singa") {
+                image.setAttribute(
+                                       
+                );
+                alert("ini gambar singa");
+            }else if (drop_img == "elang") {
+                image.setAttribute(
+                    "src",
+                    "https://asset-a.grid.id//crop/23x0:902x555/700x465/photo/2019/05/20/1674312253.jpg"
+                );
+                alert ("ini gambar elang")
+            }
+        }
+    </script>
+</body>
+
+</html>
