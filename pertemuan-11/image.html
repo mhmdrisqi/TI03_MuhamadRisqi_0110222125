@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>- - - P i l i h  G a m b a r - - -</option>
+        <option value="kampus">Kampus B</option>
+        <option value="stt nf">Stt nf</option>
+        <option value="cyber">Cyber campus</option>
+    </select><br>
+    
+    <img alt="gambar" id="image" width="200px" height="300px">
+
+    <script>
+        function gambar(){
+            let drop_img = document.getElementById ("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if(drop_img == "kampus"){
+                image.setAttribute(
+                    "src",
+                    "gedung.jpg"                  
+                );
+                alert("Ini foto kampus!")
+            }else if (drop_img == "stt nf"){
+                image.setAttribute(
+                    "src",
+                    "logonf.png"
+             
+                );
+                alert("ini gambar logo!")
+            }else if (drop_img == "cyber"){
+                image.setAttribute(
+                "src",
+                "stt nf.jpg"
+            );
+            alert("Ini gambar cyber campus!")
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
